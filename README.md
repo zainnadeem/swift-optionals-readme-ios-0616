@@ -1,6 +1,6 @@
 # Optionals
 
-
+![Pet Turtle](http://i.imgur.com/CEI0v.gif)
 
 ## Learning Objectives - The student should be able to..
 
