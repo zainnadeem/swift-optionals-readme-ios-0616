@@ -69,7 +69,24 @@ if myPet != nil {
 // prints "I have a pet Optional("Turtle 🐢")"
 ```
 
-* Well, it's still printing that optional bit. Here is where we could introduce 
+* Well, it's still printing that optional bit. Here is where we could introduce forced unwrapping.
+* Here we can introduce *optional binding* which we use to find out whether an optional contains a value, and if so, to make that value available as a temporary constant or variable.
+* I've seen students get confused with optional binding thinking the temporary constant made has to be the same name of the optional, so I think it's a good idea to show them something like the following:
+
+```swift
+if let myPet = myPet {
+    print("Scooter is the name of my pet \(myPet)")
+    // prints "Scooter is the name of my pet Turtle 🐢"
+}
+
+if let scooterTheTurtle = myPet {
+    print("My pet \(scooterTheTurtle) is pretty cool, he loves to eat lettuce.")
+    // prints "My pet Turtle 🐢 is pretty cool, he loves to eat lettuce."
+}
+```
+
+* Make the student aware that the constant is only available within the scope of that if statement `{ }`.
+* I'm unsure if we should introduce implicitly unwrapped optionals at this point. I welcome the opinions.
 
 
 
