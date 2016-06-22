@@ -2,37 +2,35 @@
 
 ![Pet Turtle](http://i.imgur.com/CEI0v.gif)
 
-## Learning Objectives - The student should be able to..
+## Learning Objectives - The student should be able to...
 
-* Explain that an `optional` either contains a value, or it doesn't.
-* Explain that we know whether or not an `optional` contains a value by checking to see if the value is not equal `!=` to nil.
+* Explain that an `Optional` either contains a value, or it doesn't.
+* Explain that we know whether or not an `Pptional` contains a value by checking to see if the value is not equal `!=` to `nil`.
 * Set an optional variable to a valueless state by assigning it the value `nil`.
-* Can use an if statement to find out whether an `optional` contains a value by comparing the `optional` against nil.
+* Can use an if statement to find out whether an `Optional` contains a value by comparing the `Optional` against `nil`.
 * Can use *optional binding* to find out whether an optional contains a value, and if so, to make that value available as a temporary constant.
 
-```swift
-var present: String? = "iPad Air"
+        ```swift
+        var present: String? = "iPad Air"
 
-if let present = present {
-    print("Yay!, we have a new \(present)")
-    // prints "Yay!, we have a new iPad Air"
-}
+        if let present = present {
+            print("Yay!, we have a new \(present)")
+            // prints "Yay!, we have a new iPad Air"
+        }
 
-if let canTypeAnythingHere = present {
-    print("Yay!, we have a new \(canTypeAnythingHere)")
-    // prints "Yay!, we have a new iPad Air"
-}
-```
-
-
+        if let canTypeAnythingHere = present {
+            print("Yay!, we have a new \(canTypeAnythingHere)")
+            // prints "Yay!, we have a new iPad Air"
+        }
+        ```
 
 ## What the student can do at this point 
 
 * Create variables and constants
 * Is familiar with type annotations, type inference and string interpolation.
 * Can create functions with return types.
-* Is familiar with the String, Int, Double, and Bool type.
-* Can perform arithmetic operations on Int and Double.
+* Is familiar with the `String`, `Int`, `Double`, and `Bool` type.
+* Can perform arithmetic operations on `Int` and `Double`.
 * Understands if and else clause statements.
 
 
@@ -87,8 +85,5 @@ if let scooterTheTurtle = myPet {
 
 * Make the student aware that the constant is only available within the scope of that if statement `{ }`.
 * I'm unsure if we should introduce implicitly unwrapped optionals at this point. I welcome the opinions.
-
-
-
 
 <a href='https://learn.co/lessons/Optionals' data-visibility='hidden'>View this lesson on Learn.co</a>
