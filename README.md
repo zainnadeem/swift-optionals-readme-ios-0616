@@ -58,7 +58,7 @@ Enter that line of code into a new playground. Check out the value that the play
 
 ![`petName` is `nil`](http://i.imgur.com/oNpWF2Z.png)
 
-The playground tells you that the value of `petName` is `nil`. In Swift, `nil` is used to represent and unknown or non-existent value. It's a placeholder until the variable's value _is_ known. It's like when you first meet someone, and don't know if they have a pet or not. They _might_ have a pet, in which case if you talk them a while, you can learn its name; or they might not have a pet at all, in which case, you'll never get a name for their pet, because it doesn't exist (the name _or_ the pet)!
+The playground tells you that the value of `petName` is `nil`. In Swift, `nil` is used to represent an unknown or non-existent value. It's a placeholder until the variable's value _is_ known. It's like when you first meet someone, and don't know if they have a pet or not. They _might_ have a pet, in which case if you talk to them for a while, you can learn its name; or they might not have a pet at all, in which case, you'll never get a name for their pet, because it doesn't exist (the name _or_ the pet)!
 
 Try <kbd>Option</kbd>-clicking on `petName` in the playground. Notice that Xcode reports that the type is of `String?`—_not_ `String`. It's an optional string!
 
@@ -137,7 +137,7 @@ What do you see in the console now?
 
 You should see "My friend's pet is Scooter 🐢". Look—no more "Optional(...)" stuff!
 
-Let's break down at if statement a bit. Within the condition of the if statement, you wrote `let petName = petName`. That looks like a constant definition, doesn't it? Well, it is. What that line says is this: "If `petName` has a value, unwrap it and assign it to the name `petName` within the body of this if statement." You can then use `petName` to refer to the _unwrapped_ value (but only within the if statement).
+Let's break down that if statement a bit. Within the condition of the if statement, you wrote `let petName = petName`. That looks like a constant definition, doesn't it? Well, it is. What that line says is this: "If `petName` has a value, unwrap it and assign it to the name `petName` within the body of this if statement." You can then use `petName` to refer to the _unwrapped_ value (but only within the if statement).
 
 Note that you don't have to use a constant with the same name as the `Optional` value. This will work, too:
 
@@ -155,7 +155,7 @@ Note that when you _bind_ the unwrapped value of `petName` to a different name, 
 
 Try commenting out the second line of your playground (`petName = "Scooter 🐢"`) and see what gets printed now.
 
-Another thing to note: When unwrapped `Optional`s, you don't _need_ to have an else branch in your if statement. If the `Optional` is `nil` and you didn't write an else branch, nothing will happen. Sometimes you want to do nothing, and sometimes you want to do something different if the `Optional` is nil. Either way, Swift forces you to deal with `nil` values.
+Another thing to note: When unwrapping `Optional`s, you don't _need_ to have an else branch in your if statement. If the `Optional` is `nil` and you didn't write an else branch, nothing will happen. Sometimes you want to do nothing, and sometimes you want to do something different if the `Optional` is nil. Either way, Swift forces you to deal with `nil` values.
 
 Optionals play a big part in Swift programming. They may seem a bit confusing, but using them can lead to programs with fewer errors, and as you use them more, they'll quickly become second nature to you. Values may be optional, but knowing how to handle them isn't!
 
