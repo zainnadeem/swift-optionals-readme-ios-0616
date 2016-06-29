@@ -7,8 +7,8 @@
 * Explain that an `Optional` either contains a value, or it doesn't.
 * Explain that we know whether or not an `Pptional` contains a value by checking to see if the value is not equal `!=` to `nil`.
 * Set an optional variable to a valueless state by assigning it the value `nil`.
-* Can use an if statement to find out whether an `Optional` contains a value by comparing the `Optional` against `nil`.
-* Can use *optional binding* to find out whether an optional contains a value, and if so, to make that value available as a temporary constant.
+* Use an if statement to find out whether an `Optional` contains a value by comparing the `Optional` against `nil`.
+* Use *optional binding* to find out whether an optional contains a value, and if so, to make that value available as a temporary constant.
 
         ```swift
         var present: String? = "iPad Air"
@@ -23,16 +23,6 @@
             // prints "Yay!, we have a new iPad Air"
         }
         ```
-
-## What the student can do at this point 
-
-* Create variables and constants
-* Is familiar with type annotations, type inference and string interpolation.
-* Can create functions with return types.
-* Is familiar with the `String`, `Int`, `Double`, and `Bool` type.
-* Can perform arithmetic operations on `Int` and `Double`.
-* Understands if and else clause statements.
-
 
 ## Optional Values
 
