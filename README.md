@@ -10,20 +10,6 @@
 * Use an if statement to find out whether an `Optional` contains a value by comparing the `Optional` against `nil`.
 * Use *optional binding* to find out whether an optional contains a value, and if so, to make that value available as a temporary constant.
 
-        ```swift
-        var present: String? = "iPad Air"
-
-        if let present = present {
-            print("Yay!, we have a new \(present)")
-            // prints "Yay!, we have a new iPad Air"
-        }
-
-        if let canTypeAnythingHere = present {
-            print("Yay!, we have a new \(canTypeAnythingHere)")
-            // prints "Yay!, we have a new iPad Air"
-        }
-        ```
-
 ## Optional Values
 
 Pets are great, aren't they? Isn't it nice to come home and a puppy that jumps up at you, excited to see you again after a long, hard day? Or a cat that climbs on your lap and walks all over your keyboard when you're trying to study Swift programming? Isn't it great that everyone has a furry (or scaly, or feathery) friend to keep them company?
