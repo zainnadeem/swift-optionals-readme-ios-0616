@@ -5,7 +5,7 @@
 ## Learning Objectives - The student should be able to...
 
 * Explain that an `Optional` either contains a value, or it doesn't.
-* Explain that we know whether or not an `Pptional` contains a value by checking to see if the value is not equal `!=` to `nil`.
+* Explain that we know whether or not an `Optional` contains a value by checking to see if the value is not equal `!=` to `nil`.
 * Set an optional variable to a valueless state by assigning it the value `nil`.
 * Use an if statement to find out whether an `Optional` contains a value by comparing the `Optional` against `nil`.
 * Use *optional binding* to find out whether an optional contains a value, and if so, to make that value available as a temporary constant.
@@ -54,7 +54,7 @@ Put that in your playground. You'll notice that playground shows you the current
 
 So that means `petName` is now a `String`. But wait...before, you learned that variables can't just change type. How did `petName` go from being a `String?` (an optional string) to a `String` when you changed the value?
 
-Try <kbd>Option</kbd>-clicking on the `petName` in the second line of code in your program. What do you see?
+Try Option+ clicking on the `petName` in the second line of code in your program. What do you see?
 
 ![`petName` type](http://i.imgur.com/Zom71gF.png)
 
