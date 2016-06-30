@@ -35,7 +35,7 @@ That type is actually an _optional_ string. It means that a `String` _value_ may
 
 Enter that line of code into a new playground. Check out the value that the playground prints for `petName` in the right-hand sidebar. Notice anything unusual?
 
-![`petName` is `nil`](http://i.imgur.com/oNpWF2Z.png)
+![petName](http://i.imgur.com/oNpWF2Z.png)
 
 The playground tells you that the value of `petName` is `nil`. In Swift, `nil` is used to represent an unknown or non-existent value. It's a placeholder until the variable's value _is_ known. It's like when you first meet someone, and don't know if they have a pet or not. They _might_ have a pet, in which case if you talk to them for a while, you can learn its name; or they might not have a pet at all, in which case, you'll never get a name for their pet, because it doesn't exist (the name _or_ the pet)!
 
@@ -53,13 +53,13 @@ petName = "Scooter 🐢"
 
 Put that in your playground. You'll notice that playground shows you the current value of `petName` in the sidebar. It's the string "Scooter 🐢".
 
-!["Scooter 🐢"](http://i.imgur.com/yq3Cg3o.png)
+![Scoot](http://i.imgur.com/yq3Cg3o.png)
 
 So that means `petName` is now a `String`. But wait...before, you learned that variables can't just change type. How did `petName` go from being a `String?` (an optional string) to a `String` when you changed the value?
 
 Try Option+ clicking on the `petName` in the second line of code in your program. What do you see?
 
-![`petName` type](http://i.imgur.com/Zom71gF.png)
+![petnameType](http://i.imgur.com/Zom71gF.png)
 
 Xcode still reports the type is a `String?` (an _optional_ string). The type didn't change at all!
 
