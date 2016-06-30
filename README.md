@@ -36,7 +36,7 @@ Enter that line of code into a new playground. Check out the value that the play
 
 The playground tells you that the value of `petName` is `nil`. In Swift, `nil` is used to represent an unknown or non-existent value. It's a placeholder until the variable's value _is_ known. It's like when you first meet someone, and don't know if they have a pet or not. They _might_ have a pet, in which case if you talk to them for a while, you can learn its name; or they might not have a pet at all, in which case, you'll never get a name for their pet, because it doesn't exist (the name _or_ the pet)!
 
-Try <kbd>Option</kbd>-clicking on `petName` in the playground. Notice that Xcode reports that the type is of `String?`—_not_ `String`. It's an optional string!
+Try Option+clicking on `petName` in the playground. Notice that Xcode reports that the type is of `String?`—_not_ `String`. It's an optional string!
 
 ![Optional string](http://i.imgur.com/l8KXEe3.png)
 
