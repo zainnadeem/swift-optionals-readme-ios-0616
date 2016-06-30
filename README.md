@@ -17,7 +17,7 @@
 
 Pets are great, aren't they? Isn't it nice to come home and a puppy that jumps up at you, excited to see you again after a long, hard day? Or a cat that climbs on your lap and walks all over your keyboard when you're trying to study Swift programming? Isn't it great that everyone has a furry (or scaly, or feathery) friend to keep them company?
 
-Wait. Not everyone has a pet 😞. When you first meet someone, it's pretty hard to know if they have a pet, unless you ask them. Until you do, you never know when they have an animal companion or not.
+Wait. Not everyone has a pet :(. When you first meet someone, it's pretty hard to know if they have a pet, unless you ask them. Until you do, you never know when they have an animal companion or not.
 
 Situations like an unknown pet situation come up a lot in programming, too. You've already learned that constants and variables are associated with a _value_. The problem is that sometimes you don't know what that value is, or if it even exists, when you declare a constant or variable. It's like the pet situation! You might make a new friend but not immediately know if they have a pet or not.
 
@@ -48,10 +48,10 @@ Let's say you talk to your new friend a bit, and you mention that you have a pup
 Now you can fill in the missing information in your program:
 
 ```swift
-petName = "Scooter 🐢"
+petName = "Scooter"
 ```
 
-Put that in your playground. You'll notice that playground shows you the current value of `petName` in the sidebar. It's the string "Scooter 🐢".
+Put that in your playground. You'll notice that playground shows you the current value of `petName` in the sidebar. It's the string "Scooter".
 
 ![Scoot](http://i.imgur.com/yq3Cg3o.png)
 
@@ -67,7 +67,7 @@ You can see this more obviously by adding a `print()` statement to your playgrou
 
 ```swift
 print(petName)
-// prints Optional("Scooter 🐢")
+// prints Optional("Scooter")
 ```
 
 Yep, still an `Optional`.
@@ -90,13 +90,13 @@ If you said `if petName != nil`, give yourself a pat on the back, because you're
 if petName != nil {
     print("My friend's pet is \(petName)")
 } else {
-    print("My friend doesn't have a pet 😞")
+    print("My friend doesn't have a pet :(")
 }
 
-// prints "My friend's pet is Optional("Scooter 🐢")"
+// prints "My friend's pet is Optional("Scooter")"
 ```
 
-Voilà! You checked to see if `petName != nil`, and since it doesn't, the first branch of your if statement was executed. Try going back and removing or commenting out the second line of your playground (`petName = "Scooter 🐢"`) and see what is printed instead.
+Voilà! You checked to see if `petName != nil`, and since it doesn't, the first branch of your if statement was executed. Try going back and removing or commenting out the second line of your playground (`petName = "Scooter"`) and see what is printed instead.
 
 But wait. We said that unwrapping an `Optional` wouldn't print that "Optional(...)" bit in the console, but it's still being printed! That's because you haven't actually _unwrapped_ the value yet—you've only checked to see if it's `nil` or not.
 
@@ -109,12 +109,12 @@ if let petName = petName {
     print("My friend's pet is \(petName)")
 }
 
-// prints "My friend's pet is Scooter 🐢"
+// prints "My friend's pet is Scooter"
 ```
 
 What do you see in the console now?
 
-You should see "My friend's pet is Scooter 🐢". Look—no more "Optional(...)" stuff!
+You should see "My friend's pet is Scooter". Look—no more "Optional(...)" stuff!
 
 Let's break down that if statement a bit. Within the condition of the if statement, you wrote `let petName = petName`. That looks like a constant definition, doesn't it? Well, it is. What that line says is this: "If `petName` has a value, unwrap it and assign it to the name `petName` within the body of this if statement." You can then use `petName` to refer to the _unwrapped_ value (but only within the if statement).
 
@@ -126,13 +126,13 @@ if let friendsPet = petName {
     print("petName is still an Optional! \(petName)")
 }
 
-// prints "My friend's pet is Scooter 🐢"
-// prints "petName is still an Optional! Optional("Scooter 🐢")"
+// prints "My friend's pet is Scooter"
+// prints "petName is still an Optional! Optional("Scooter")"
 ```
 
 Note that when you _bind_ the unwrapped value of `petName` to a different name, `petName` will still refer to the original `Optional` value. (That's why Swift programmers will often bind the unwrapped `Optional` value to a constant of the same name, to avoid using the wrong constant or variable name in the if statement.)
 
-Try commenting out the second line of your playground (`petName = "Scooter 🐢"`) and see what gets printed now.
+Try commenting out the second line of your playground (`petName = "Scooter"`) and see what gets printed now.
 
 Another thing to note: When unwrapping `Optional`s, you don't _need_ to have an else branch in your if statement. If the `Optional` is `nil` and you didn't write an else branch, nothing will happen. Sometimes you want to do nothing, and sometimes you want to do something different if the `Optional` is nil. Either way, Swift forces you to deal with `nil` values.
 
