@@ -1,8 +1,11 @@
 # Optionals
 
-![Pet Turtle](http://i.imgur.com/CEI0v.gif)
+![Drawing](http://i.imgur.com/Cm2xYU2.jpg?1)
 
-## Learning Objectives - The student should be able to...
+> Life shrinks or expands in proportion to one’s courage. -[Anais Nin](https://en.wikipedia.org/wiki/Anaïs_Nin)
+
+
+## Learning Objectives
 
 * Explain that an `Optional` either contains a value, or it doesn't.
 * Explain that we know whether or not an `Optional` contains a value by checking to see if the value is not equal `!=` to `nil`.
