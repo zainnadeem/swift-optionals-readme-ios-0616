@@ -138,4 +138,4 @@ Another thing to note: When unwrapping `Optional`s, you don't _need_ to have an 
 
 Optionals play a big part in Swift programming. They may seem a bit confusing, but using them can lead to programs with fewer errors, and as you use them more, they'll quickly become second nature to you. Values may be optional, but knowing how to handle them isn't!
 
-<a href='https://learn.co/lessons/Optionals' data-visibility='hidden'>View this lesson on Learn.co</a>
+<a href='https://learn.co/lessons/Optionals' data-visibility='hidden'>View this lesson on Learn.co </a>
